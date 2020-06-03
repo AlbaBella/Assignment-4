@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Assignment-4</title>
+</head>
+<body>
+    <div>
+        <h1>PART ONE</h1>
+        <section >
+            <button id = "button1">Button 1</button>
+            <label id = argutext1></label>
+            <br>
+            <button id = "button2">Button 2</button>
+            <label id = argutext2></label>
+
+        </div>
+
+        <script>
+            let button1 = document.getElementById("button1");
+            button1.addEventListener("click", function(event){
+                document.getElementById("argutext1").innerText = "Im Right";
+                document.getElementById("argutext2").innerText = "";
+            });
+
+
+            let button2 = document.getElementById("button2");
+            button2.addEventListener("click", function(event){
+                document.getElementById("argutext2").innerText = "No, Im Right";
+                document.getElementById("argutext1").innerText = "";
+            });
+        </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
